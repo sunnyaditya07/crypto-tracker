@@ -44,20 +44,17 @@ const CryptoData = () => {
     }
   };
 
-  function formatNumberToInternational(numberString) {
-    const digitsArray = Number(numberString).toString().split("");
+  function formatNumberToInternational(number) {
+    const parts = number.toString().split(".");
 
-    digitsArray.reverse();
+    const integerWithCommas = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
-    const formattedNumber = digitsArray.reduce((acc, digit, index) => {
-      if (index > 0 && index % 3 === 0) {
-        return digit + "," + acc;
-      } else {
-        return digit + acc;
-      }
-    }, "");
+    const numberWithCommas =
+      parts.length === 2
+        ? integerWithCommas + "." + parts[1]
+        : integerWithCommas;
 
-    return formattedNumber.split("").reverse().join("");
+    return numberWithCommas;
   }
 
   function formatToPercentage(number) {
