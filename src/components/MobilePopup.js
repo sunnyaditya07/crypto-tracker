@@ -61,7 +61,7 @@ const MobilePopup = ({ data, id, handleModalClose }) => {
               <p>7D</p>
               <p className="ct-data-up-percent ct-modal-data-text">
                 <span>
-                  <i class="bi bi-caret-down-fill "></i>
+                  <i class="bi bi-caret-up-fill"></i>
                 </span>
                 <span>
                   {" "}
