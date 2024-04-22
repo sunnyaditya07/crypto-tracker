@@ -86,13 +86,16 @@ const MobilePopup = ({ data, id, handleModalClose }) => {
               <p className="ct-modal-data-text">
                 ${formatNumberToInternational(filteredData.total_volume)}
                 <span className="ct-data-symbol ct-data-opacity ">
-                  ( {formatNumberToInternational(filteredData.high_24h)}{" "}
+                  ({formatNumberToInternational(filteredData.high_24h)}{" "}
                   {filteredData.symbol})
                 </span>
               </p>
             </div>
           </div>
-          <div className="ct-modal-data-container">
+          <div
+            className="ct-modal-data-container"
+            style={{ marginBottom: "10px" }}
+          >
             <div>
               <p>CIRCULATING SUPPLY</p>
               <p className="ct-modal-data-text">
