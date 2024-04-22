@@ -142,13 +142,13 @@
     width: 100%;
   }
   .ct-data-price {
-    width: 100%;
+    width: 50%;
   }
   .ct-data-text-align {
     text-align: start;
   }
   .ct-data-percent {
-    width: 60%;
+    width: 40%;
   }
   .ct-pagination-container {
     justify-content: center;
