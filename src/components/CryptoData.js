@@ -8,6 +8,8 @@ const CryptoData = () => {
   const [totalPages, setTotalPages] = useState(1);
   const [modalOpen, setModalOpen] = useState(false);
   const [id, setId] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
+
   const handleModalOpen = (id) => {
     setModalOpen(!modalOpen);
     setId(id);
@@ -62,10 +64,9 @@ const CryptoData = () => {
     return formattedNumber;
   }
   const handlePageChange = (page) => {
-    setCurrentPage(page);
+    const newPage = Math.max(1, page);
+    setCurrentPage(newPage);
   };
-  const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
