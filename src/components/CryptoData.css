@@ -131,6 +131,7 @@
 @media only screen and (max-width: 500px) {
   .ct-data-title {
     justify-content: space-between;
+    padding-block: 20px;
   }
   .ct-data-name-text {
     padding-left: 20px;
