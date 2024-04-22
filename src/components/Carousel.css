@@ -1,0 +1,64 @@
+.ct-carousel-container {
+  background: linear-gradient(to bottom, #f8fafc 0%, #f8fafc 100%);
+  padding: 30px 50px 0px 50px;
+}
+.ct-carousel-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ct-carousel-box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border-radius: 12px;
+  gap: 10px;
+  width: 100%;
+}
+.ct-carousel-text-container {
+  /* padding-top: 10px; */
+  width: 100%;
+}
+.ct-carousel-title-text {
+  font-size: 1.4rem;
+  color: #656c7e;
+}
+.ct-carousel-main-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.ct-carousel-crypto-text {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 30px;
+}
+.ct-carousel-show-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.ct-carousel-item-list {
+  display: inline-block;
+  padding: 8px;
+  background: #eff2f5;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.bi-star {
+  margin-right: 4px;
+}
+.ct-carousel-show-rows-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.item-active {
+  color: #3861fb;
+}

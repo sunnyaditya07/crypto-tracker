@@ -1,0 +1,38 @@
+.ct-header-container {
+  border-bottom: 1px solid #e5e5e5;
+}
+.ct-logo-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 10px 50px 10px 50px; */
+  padding-inline: 5%;
+  padding-block: 10px;
+}
+.ct-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ct-logo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.ct-logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ct-search-burger-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.bi-search {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.bi-list {
+  cursor: pointer;
+  font-size: 2.5rem;
+}

@@ -1,0 +1,129 @@
+.ct-data-main-title {
+  text-transform: uppercase;
+}
+.ct-data-title {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  padding: 10px 0 10px 0;
+
+  border-bottom: 1px solid #eff2f5;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.ct-data-index {
+  width: 4%;
+}
+.ct-data-index-number-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ct-data-text-align {
+  text-align: end;
+}
+.ct-data-name {
+  width: 15%;
+}
+.ct-data-name-box {
+  display: flex;
+  align-items: center;
+}
+.ct-data-name-box img {
+  margin-right: 10px;
+}
+.ct-data-price {
+  width: 8%;
+}
+.ct-data-percent {
+  width: 8%;
+}
+.ct-data-market-cap {
+  width: 15%;
+}
+.ct-data-market-cap-24h {
+  font-size: 1.2rem;
+}
+.ct-data-high {
+  margin-top: 4px;
+}
+.ct-data-symbol {
+  text-transform: uppercase;
+  margin-left: 2px;
+}
+.bi-arrow-down {
+  color: #0052fe;
+}
+.bi-three-dots-vertical {
+  margin-right: 15px;
+}
+.ct-data-up-percent {
+  color: #16c784;
+}
+.ct-data-down-percent {
+  color: #ea3943;
+}
+.ct-data-opacity {
+  opacity: 50%;
+}
+.ct-data-filled-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 8px;
+}
+.ct-data-filled {
+  width: 80%;
+  height: 5px;
+  background: #eff2f5;
+  border-radius: 4px;
+}
+.ct-data-remain {
+  background: #cfd6e4;
+  width: 80%;
+  height: 5px;
+}
+.ct-empty-dat {
+  width: 2%;
+}
+.ct-crypto-data-container {
+  /* padding: 10px 50px 10px 50px;
+   */
+  padding-inline: 5%;
+}
+.ct-pagination-container {
+  display: flex;
+  justify-content: end;
+  padding-right: 5%;
+  gap: 20px;
+  padding-block: 20px;
+}
+.ct-pagination-previous-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.previous-page {
+  background: #919eab;
+  color: #dfe3e8;
+}
+.current-page {
+  border: 1px solid #0052fe;
+  color: #0052fe;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.next-page {
+  border: 1px solid #dfe3e8;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #dfe3e8;
+}
+.bi-chevron-left {
+  font-size: 1.6rem;
+}
