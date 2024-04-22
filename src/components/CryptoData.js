@@ -71,10 +71,10 @@ const CryptoData = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust the width based on your mobile breakpoint
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Call it initially to set the initial state
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);

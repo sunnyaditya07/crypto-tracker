@@ -83,6 +83,7 @@
   background: #cfd6e4;
   width: 80%;
   height: 5px;
+  border-radius: 4px;
 }
 .ct-empty-dat {
   width: 2%;
