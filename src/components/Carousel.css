@@ -1,6 +1,8 @@
 .ct-carousel-container {
   background: linear-gradient(to bottom, #f8fafc 0%, #f8fafc 100%);
-  padding: 30px 50px 0px 50px;
+
+  padding-inline: 5%;
+  padding-top: 30px;
 }
 .ct-carousel-list-container {
   display: flex;
@@ -61,4 +63,17 @@
 }
 .item-active {
   color: #3861fb;
+}
+
+@media only screen and (max-width: 500px) {
+  .ct-carousel-main-container2,
+  .ct-carousel-main-container3 {
+    display: none;
+  }
+  .ct-carousel-show-item-container {
+    display: none;
+  }
+  .ct-carousel-crypto-text {
+    padding-bottom: 30px;
+  }
 }

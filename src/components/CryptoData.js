@@ -60,10 +60,10 @@ const CryptoData = () => {
     <div>
       <div className="ct-crypto-data-container">
         <ul className="ct-data-title ct-data-main-title">
-          <li className="ct-data-index ct-data-text-align">
+          <li className="ct-data-index ct-data-text-align item-display">
             <p>#</p>
           </li>
-          <li className="ct-data-name">
+          <li className="ct-data-name ct-data-name-text">
             <p>Name</p>
           </li>
           <li className="ct-data-price ct-data-text-align">
@@ -74,23 +74,23 @@ const CryptoData = () => {
               24H <i class="bi bi-arrow-down"></i>
             </p>
           </li>
-          <li className="ct-data-percent ct-data-text-align">
+          <li className="ct-data-percent ct-data-text-align item-display">
             <p>7D</p>
           </li>
-          <li className="ct-data-market-cap ct-data-text-align">
+          <li className="ct-data-market-cap ct-data-text-align item-display">
             <p>market Cap</p>
           </li>
-          <li className="ct-data-market-cap ct-data-text-align">
+          <li className="ct-data-market-cap ct-data-text-align item-display">
             <p>Volume(24H)</p>
           </li>
-          <li className="ct-data-market-cap ct-data-text-align">
+          <li className="ct-data-market-cap ct-data-text-align item-display">
             <p>Circulating Supply</p>
           </li>
-          <li className="ct-empty-dat"></li>
+          <li className="ct-empty-dat item-display"></li>
         </ul>
         {data.map((item) => (
           <ul className="ct-data-title">
-            <li className="ct-data-index ct-data-opacity ct-data-text-align">
+            <li className="ct-data-index ct-data-opacity ct-data-text-align item-display">
               <p className="ct-data-index-number-container">
                 <span>
                   <i class="bi bi-star"></i>
@@ -100,6 +100,9 @@ const CryptoData = () => {
             </li>
 
             <li className="ct-data-name ct-data-name-box">
+              <span className="item-display-hide ct-data-opacity">
+                <i class="bi bi-star star-icon"></i>
+              </span>
               <img src={item.image} style={{ width: "20px" }} alt="logo" />
               <p>
                 {item.name}{" "}
@@ -123,7 +126,7 @@ const CryptoData = () => {
                 </span>
               </p>
             </li>
-            <li className="ct-data-percent ct-data-up-percent ct-data-text-align">
+            <li className="ct-data-percent ct-data-up-percent ct-data-text-align item-display">
               <span>
                 <i class="bi bi-caret-up-fill"></i>
               </span>
@@ -133,10 +136,10 @@ const CryptoData = () => {
                 )}
               </span>
             </li>
-            <li className="ct-data-market-cap ct-data-text-align">
+            <li className="ct-data-market-cap ct-data-text-align item-display">
               <p>${formatNumberToInternational(item.market_cap)}</p>
             </li>
-            <li className="ct-data-market-cap ct-data-text-align">
+            <li className="ct-data-market-cap ct-data-text-align item-display">
               <p>${formatNumberToInternational(item.total_volume)}</p>
               <p className="ct-data-market-cap-24h ct-data-opacity ct-data-high">
                 {" "}
@@ -144,7 +147,7 @@ const CryptoData = () => {
                 <span className="ct-data-symbol ">{item.symbol}</span>
               </p>
             </li>
-            <li className="ct-data-market-cap ct-data-text-align">
+            <li className="ct-data-market-cap ct-data-text-align item-display">
               <div>
                 <p>{formatNumberToInternational(item.circulating_supply)}</p>
                 <div className="ct-data-filled-container">
@@ -154,7 +157,7 @@ const CryptoData = () => {
                 </div>
               </div>
             </li>
-            <li className="ct-empty-dat ct-data-text-align">
+            <li className="ct-empty-dat ct-data-text-align item-display">
               <div>
                 <i class="bi bi-three-dots-vertical"></i>
               </div>

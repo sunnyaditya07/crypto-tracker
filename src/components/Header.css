@@ -36,3 +36,12 @@
   cursor: pointer;
   font-size: 2.5rem;
 }
+
+@media only screen and (max-width: 500px) {
+  .ct-logo-icon-container {
+    /* padding-inline: 2%; */
+  }
+  .item-display {
+    display: none;
+  }
+}

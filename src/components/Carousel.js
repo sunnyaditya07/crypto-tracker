@@ -4,7 +4,7 @@ const Carousel = () => {
   return (
     <div className="ct-carousel-container">
       <div className="ct-carousel-list-container">
-        <div>
+        <div className="ct-carousel-main-container1">
           <div className="ct-carousel-box">
             <div>
               <img src={require("../assets/N.png")} alt="n" />
@@ -17,7 +17,7 @@ const Carousel = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="ct-carousel-main-container2">
           <div className="ct-carousel-box">
             <div>
               <img src={require("../assets/gallery.png")} alt="n" />
@@ -30,7 +30,7 @@ const Carousel = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="ct-carousel-main-container3">
           <div className="ct-carousel-box">
             <div>
               <img src={require("../assets/portfolio.png")} alt="n" />

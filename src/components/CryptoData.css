@@ -127,3 +127,30 @@
 .bi-chevron-left {
   font-size: 1.6rem;
 }
+
+@media only screen and (max-width: 500px) {
+  .ct-data-title {
+    justify-content: space-between;
+  }
+  .ct-data-name-text {
+    padding-left: 20px;
+  }
+  .star-icon {
+    margin-right: 8px;
+  }
+  .ct-data-name {
+    width: 100%;
+  }
+  .ct-data-price {
+    width: 100%;
+  }
+  .ct-data-text-align {
+    text-align: start;
+  }
+  .ct-data-percent {
+    width: 60%;
+  }
+  .ct-pagination-container {
+    justify-content: center;
+  }
+}

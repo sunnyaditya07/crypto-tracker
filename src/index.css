@@ -13,3 +13,32 @@ body {
   line-height: 1;
   background-color: #fff;
 }
+/* @media only screen and (max-width: 1200px) {
+  body {
+    margin-inline: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    margin-inline: 1rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    margin-inline: 2rem;
+  }
+} */
+.item-display {
+  display: block;
+}
+.item-display-hide {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .item-display {
+    display: none;
+  }
+  .item-display-hide {
+    display: block;
+  }
+}
