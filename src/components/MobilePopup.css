@@ -1,0 +1,58 @@
+.ct-mobile-popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 28, 28, 0.3);
+  backdrop-filter: blur(1px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0f1629;
+}
+.ct-mobile-popup-modal {
+  border: 2px solid #dbdcdf;
+  width: 90%;
+  padding: 15px;
+  border-radius: 8px;
+  background: #ffffff;
+}
+.ct-mobile-modal-cancel-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.ct-mobile-modal-crypto-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.ct-mobile-modal-crypto-title p {
+  margin-left: 10px;
+}
+.bi-x-lg {
+  font-size: 1.4rem;
+  color: #abaaab;
+}
+.ct-modal-data-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.ct-modal-data-text {
+  margin-top: 8px;
+}
+.ct-mobile-popup-modal .ct-modal-data-container .ct-data-filled-container {
+  justify-content: start;
+  width: 200px;
+}
+.modal-open {
+  overflow: hidden;
+}

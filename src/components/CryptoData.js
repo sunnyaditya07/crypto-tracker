@@ -1,11 +1,23 @@
 import React, { useEffect, useState } from "react";
 import "./CryptoData.css";
 import axios from "axios";
+import MobilePopup from "./MobilePopup";
 const CryptoData = () => {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-
+  const [modalOpen, setModalOpen] = useState(false);
+  const [id, setId] = useState("");
+  const handleModalOpen = (id) => {
+    setModalOpen(!modalOpen);
+    setId(id);
+    document.body.classList.toggle("modal-open");
+  };
+  const handleModalClose = () => {
+    setModalOpen(!modalOpen);
+    setId("");
+    document.body.classList.toggle("modal-open");
+  };
   useEffect(() => {
     fetchData(currentPage);
   }, [currentPage]);
@@ -55,6 +67,18 @@ const CryptoData = () => {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the width based on your mobile breakpoint
+    };
+
+    handleResize(); // Call it initially to set the initial state
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div>
@@ -89,7 +113,14 @@ const CryptoData = () => {
           <li className="ct-empty-dat item-display"></li>
         </ul>
         {data.map((item) => (
-          <ul className="ct-data-title">
+          <ul
+            className="ct-data-title"
+            onClick={() => {
+              if (isMobile) {
+                handleModalOpen(item.id);
+              }
+            }}
+          >
             <li className="ct-data-index ct-data-opacity ct-data-text-align item-display">
               <p className="ct-data-index-number-container">
                 <span>
@@ -183,6 +214,9 @@ const CryptoData = () => {
           <i class="bi bi-chevron-right"></i>
         </div>
       </div>
+      {modalOpen && (
+        <MobilePopup data={data} id={id} handleModalClose={handleModalClose} />
+      )}
     </div>
   );
 };
